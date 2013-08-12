@@ -11,7 +11,7 @@
 
 // Localise Globals
 var
-    document = window.document, // Make sure we are using the correct document
+    document = require('global/document'), // Make sure we are using the correct document
     setTimeout = window.setTimeout||setTimeout,
     clearTimeout = window.clearTimeout||clearTimeout,
     setInterval = window.setInterval||setInterval,

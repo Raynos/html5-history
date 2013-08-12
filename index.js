@@ -11,8 +11,9 @@
 
 // Localise Globals
 var
-    console = window.console||undefined, // Prevent a JSLint complain
-    document = window.document, // Make sure we are using the correct document
+    window = require('global/window'),
+    console = require('console'), // Prevent a JSLint complain
+    document = require('global/document'), // Make sure we are using the correct document
     navigator = window.navigator, // Make sure we are using the correct navigator
     sessionStorage = window.sessionStorage||false, // sessionStorage
     setTimeout = window.setTimeout,
@@ -47,6 +48,10 @@ History.init = function(options){
     // Check Load Status of Adapter
     if ( typeof History.Adapter === 'undefined' ) {
         return false;
+    }
+
+    if ( process.title === 'node' ) {
+        return
     }
 
     // Check Load Status of Core
