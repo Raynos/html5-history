@@ -55,9 +55,9 @@ History.init = function(options){
     }
 
     // Check Load Status of HTML4 Support
-    if ( typeof History.initHtml4 !== 'undefined' ) {
-        History.initHtml4();
-    }
+    // if ( typeof History.initHtml4 !== 'undefined' ) {
+    //     History.initHtml4();
+    // }
 
     // Return true
     return true;
