@@ -41,7 +41,7 @@ if ( typeof History.init !== 'undefined' ) {
     throw new Error('History.js Core has already been loaded...');
 }
 
-History.adapter = require('./lib/adapter.js')
+History.Adapter = require('./lib/adapter.js')
 
 // Initialise History
 History.init = function(options){
