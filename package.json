@@ -1,6 +1,6 @@
 {
   "name": "html5-history",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A npm friendly version of history.js",
   "keywords": [],
   "author": "Raynos <raynos2@gmail.com>",
