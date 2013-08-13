@@ -1,8 +1,8 @@
 var test = require("tape")
 
-var html5History = require("../index")
+var History = require("../index")
 
-test("html5History is a function", function (assert) {
-    assert.equal(typeof html5History, "function")
+test("History is a function", function (assert) {
+    assert.equal(typeof History, "object")
     assert.end()
 })
